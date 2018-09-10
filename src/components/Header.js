@@ -3,20 +3,15 @@ import React, { Component } from 'react';
 class Header extends Component {
   render() {
     return (
-      // <div>
-      //   <h1>
-      //     Header
-      //   </h1>
-      // </div>
       <nav className="navbar navbar-inverse">
         <div className="container-fluid">
-          <a className="nacbar-brand" href="#">Title</a>
+          <a className="navbar-brand" href="#">Apple Store</a>
           <ul className="nav navbar-nav">
             <li className="active">
               <a href="#">Home</a>
             </li>
             <li>
-              <a href="#">Link</a>
+              <a href="#">List Products</a>
             </li>
           </ul>
         </div>

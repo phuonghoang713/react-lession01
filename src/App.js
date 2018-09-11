@@ -3,6 +3,13 @@ import './App.css';
 import Header from './components/Header';
 import Dem from './Demo';
 class App extends Component {
+  constructor(props){
+    super(props);
+    this.onSearch = this.onSearch.bind(this)
+  }
+  onSearch(){
+    console.log(this.refs.search_name.value);
+  }
   render() {
     
     return (
@@ -40,9 +47,9 @@ class App extends Component {
               </ul>
               <form className="navbar-form navbar-left">
                 <div className="form-group">
-                  <input type="text" className="form-control" placeholder="Search"></input>
+                  <input type="text" className="form-control" placeholder="Search" ref="search_name"></input>
                 </div>
-                <button type="submit" className="btn btn-default">Submit</button>
+                <button type="button" className="btn btn-default" onClick={this.onSearch} >Submit</button>
               </form>
               <ul className="nav navbar-nav navbar-right">
                 <li><a href="#">Link</a></li>

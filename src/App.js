@@ -24,7 +24,7 @@ class App extends Component {
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
               </button>
-              <a className="navbar-brand" href="#">Props</a>
+              <a className="navbar-brand" href="#">State</a>
             </div>
         
             
@@ -67,6 +67,7 @@ class App extends Component {
             </div>
           </div>
         </nav>
+        
         <Header></Header>
         <div className="row">
           <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">

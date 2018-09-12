@@ -37,6 +37,12 @@ class Demo extends Component {
       isActive : true
     };
   }
+
+  onSetState = () => {
+    this.setState({
+      isActive : !this.state.isActive
+    });
+  }
   render() {
 
       
@@ -69,6 +75,9 @@ class Demo extends Component {
                   {elements}
                 </tbody>
               </table>
+              <button type="button" className="btn btn-success" onClick={this.onSetState}>
+                Active: {this.state.isActive === true ? 'true' : 'false'}
+              </button>
             </div>
           </div>
         </div>

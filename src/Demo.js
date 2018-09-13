@@ -48,7 +48,7 @@ class Demo extends Component {
       
       var elements = this.state.products.map((product, index) => {
         let result = '';
-        if(product.status){
+        if(this.state.isActive){
           result = <tr>
                       <td>{product.id}</td>
                       <td>{product.name}</td>

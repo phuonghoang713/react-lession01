@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Dem from './Demo';
+import Newjsx from './Newjsx'
 class App extends Component {
   constructor(props){
     super(props);
@@ -76,6 +77,10 @@ class App extends Component {
           </div>
         </div>
         <Dem />
+        <Newjsx 
+          headerProp = "Header from props..." 
+          contentProp = "Contentfrom props..."
+        />
       </div>
     );
   }

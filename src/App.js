@@ -80,6 +80,7 @@ class App extends Component {
         <Newjsx 
           headerProp = "Header from props..." 
           contentProp = "Contentfrom props..."
+    
         />
       </div>
     );
